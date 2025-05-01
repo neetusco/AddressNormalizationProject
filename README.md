@@ -50,12 +50,13 @@ AddressNormalizationProject/
 
 **How to Run This Project**
 
-1.	Create a new SQL Server database.
-2.	Execute Create_Tables.sql to create all normalized tables.
-3.	Use Bulk Insert to load the staging CSV into Staging_NAR_Raw.
-4.	Run Insert_Statements.sql to populate dimension and lookup tables.
-5.	Validate data integrity through sample queries and foreign key checks.
-6.	
+1.  Download all CSV files from the Statistics Canada National Address Register and save them to the C: drive on your local machine.
+2.	Create a new SQL Server database.
+3.	Execute Create_Tables.sql to create all normalized tables.
+4.	Use the Staging_Table.sql script to create the staging table, and perform a bulk insert of the data from the downloaded CSV files into the Staging_NAR_Raw table.
+5.	Run Insert_Statements.sql to populate dimension and lookup tables.
+6.	Validate data integrity through sample queries and foreign key checks.
+    
 **Credits**
 
 This project uses publicly available data provided by Statistics Canada and is intended for academic and learning purposes.
